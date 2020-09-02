@@ -13,8 +13,7 @@ vk = vk_api.VkApi(token=token)
 vk._auth_token()
 vk.get_api()
 longpoll = VkBotLongPoll(vk, 190986135)
-#MESSAGES = 2**12
-#vk_api.VkUserPermissions(MESSAGES)
+
 try:
     for event in longpoll.listen():
         print(event)
